@@ -23,7 +23,7 @@ namespace proxyma_task1
             }
             // конвертируем принятую string-переменную в INT 
             int interval = Convert.ToInt32(text);
-            Console.WriteLine(interval);
+            Console.WriteLine($"В файле был задан временной интервал в милисекундах: {interval} ");
             return interval;
         
         }
@@ -34,7 +34,7 @@ namespace proxyma_task1
             Timer timer = new Timer(showTime, null, 0, GetInterval());
             // Таймер будет работать до тех пор, пока мы не нажмём Enter
             string txt = Console.ReadLine();
-            if (txt == "quit" || txt == "QUIT") return ;
+            if (txt == "quit" || txt == "QUIT" || txt == "Quit" ) return ;
                 
         }
 
